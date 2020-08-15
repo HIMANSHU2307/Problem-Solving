@@ -1,4 +1,4 @@
-Problem: 
+Problem(not using nested loop(O(n^2)): 
   same('hello', 'olelh')   // Output: true
 
 Code:
