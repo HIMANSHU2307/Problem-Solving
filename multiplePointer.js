@@ -22,3 +22,6 @@ function sumZero(arr) {
 
 console.log(sumZero(arr));
 // Output : [2, -2]
+
+// Time Complexity O(n)
+// Space O(1)
