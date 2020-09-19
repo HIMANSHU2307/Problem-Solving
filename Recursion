@@ -1,4 +1,4 @@
-//// Factorial
+/////////////////////////////////////////////////////////////////////// Factorial
 
 function factorial(num) {
   if(num === 0) return 1;
@@ -6,7 +6,7 @@ function factorial(num) {
 }
 
 
-// power(2,0) // 1
+/////////////////////////////////////////////////////////////////////// power(2,0) // 1
 // power(2,2) // 4
 // power(2,4) // 16
 
@@ -20,7 +20,7 @@ function power(num, exp){
 console.log(power(2, 4))
 
 
-// sumOfArray([1,2,3]) // 6
+///////////////////////////////////////////////////////////////////// sumOfArray([1,2,3]) // 6
 
 
 function arrSum(arr) {
@@ -45,7 +45,24 @@ console.log(arrSum([1, 2, 3]));
 
 
 
-///// Recursion Helper Function
+
+
+////////////////////////////////////////////////////////////////// productOfArray([1,2,3]) // 6
+// productOfArray([1,2,3,10]) // 60
+
+
+function productArr(arr) {
+	if(arr.length === 0) return 1;
+  
+  return arr[0] * productArr(arr.slice(1));
+}
+
+console.log(productArr([1,2,3,10]))
+
+
+
+
+/////////////////////////////////////////////////////////////// Recursion Helper Function
 
 function collectOddValues(arr){
     
@@ -71,7 +88,7 @@ function collectOddValues(arr){
 collectOddValues([1,2,3,4,5,6,7,8,9])
 
 
-//// Pure Recursion
+/////////////////////////////////////////////////////////////////////// Pure Recursion
 
 function collectOddValues(arr){
     let newArr = [];
